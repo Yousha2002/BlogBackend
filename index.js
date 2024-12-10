@@ -88,6 +88,8 @@ const cookieParser = require("cookie-parser"); // Correct package
 const fs = require("fs");
 // Load environment variables
 dotenv.config();
+// Serve static files from 'public' folder (or wherever you store assets)
+app.use(express.static(path.join(__dirname, "public")));
 
 // Middleware to parse JSON requests
 app.use(express.json());
