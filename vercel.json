@@ -9,8 +9,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "/index.js"
     }
-  ]
-  
+  ],
+  "env": {
+    "MONGO_URL": "@mongo_url", 
+    "FRONTEND_URL": "http://localhost:5173" 
+  }
 }
